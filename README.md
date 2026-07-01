@@ -1,1 +1,1 @@
-# TranslateOS
+# DictOS
