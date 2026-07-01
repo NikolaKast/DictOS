@@ -1,0 +1,1 @@
+as --32 -o downloaders.o downloaders.asm && ld -Ttext 0x7c00 --oformat binary -m elf_i386 -o downloaders.bin downloaders.o && g++ -ffreestanding -m32 -fno-pic -fno-pie -o kernel.o -c kernel.cpp && ld --oformat binary -Ttext 0x10000 -o kernel.bin --entry=kmain -m elf_i386 kernel.o
